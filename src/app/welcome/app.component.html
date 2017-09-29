@@ -1,0 +1,18 @@
+<!-- placing button in the center to  fb and google -->
+
+<div style="text-align:center" *ngIf="showDivider">
+  <h1>
+    Test Project {{title}}!
+  </h1>
+  <div style="padding-top: 20%;"> 
+  <button class="btn btn-primary" routerLink="anrag" (click)="signIn('facebook')" style=" font-size: 25px;">Login with facebook</button>
+  <button class="btn btn-danger"  routerLink="anrag"  (click)="signIn('google')"  style=" font-size: 25px;margin-left: 10%;">Login with Google</button>
+</div>
+
+ </div>
+
+ <div class="container">
+   <router-outlet></router-outlet>
+ </div>
+
+
